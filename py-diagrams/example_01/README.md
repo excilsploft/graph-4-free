@@ -32,4 +32,4 @@ with Diagram("Simple Worfklow", show=False, filename=OUPUT_FILE, direction="TB",
 ```
 
 Into:
-![image](./img/example_01.svg)
+![image](./img/example_01.png)
