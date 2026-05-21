@@ -61,5 +61,6 @@ digraph "example_01" {
 }
 ```
 Into:
+
 ![image](./img/example_01.svg)
 
