@@ -10,4 +10,4 @@ OUPUT_FILE = "example_01"
 
 # Very Simple diagram using the bitshift operator for edges
 with Diagram("Simple Worfklow", show=False, filename=OUPUT_FILE, direction="TB", outformat=["svg", "png"]):
-    Nodejs("Astro") >> Github("Devtopia") >> GithubActions("GHA Runner") >> Nomad("Nomad") >> Docker("Preview Site")
+    Nodejs("Astro") >> Github("Enterprise") >> GithubActions("GHA Runner") >> Nomad("Nomad") >> Docker("Preview Site")
