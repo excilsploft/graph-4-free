@@ -8,7 +8,9 @@ You don't have to use Visio or Lucid chart to make diagrams, flowcharts or graph
 |------|-----|  
 | D2   | https://d2lang.com/ |  
 | GraphViz | https://Graphviz.org/ |  
+| Mermaid.js | https://mermaid.js.org/ |...
 | Py Diagrams | https://diagrams.mingrammer.com/ |
+
 
 
 ### D2
@@ -19,6 +21,9 @@ D2 is a graphing language that uses a single statically linked binary (`d2`) to 
 
 Graphviz is a language that allows you to specify a graph in text file and convert it into images of many formats.
 In our examples, we use the `dot` tool included in Graphviz package but there are a variety of binaries that can transform the Graphviz language to different graph layouts.
+
+### Mermaid.js
+Mermaid JS is a graphing library that exposes an API or CLI for turning a simple diagram in text to a variety of output formats.
 
 ### Python Diagram
 
