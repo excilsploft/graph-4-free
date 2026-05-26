@@ -1,0 +1,27 @@
+
+node: "Node.js" {
+	icon: https://icons.terrastruct.com/dev%2Fnodejs.svg
+    shape: image
+}
+
+gh: "Github Enterprise" {
+	icon: https://icons.terrastruct.com/dev%2Fgithub.svg
+    shape: image
+}
+
+gha: "Github Actions" {
+	icon: ./img/github-actions.png
+    shape: image
+}
+
+nomad: "Nomad" {
+	icon: ./img/nomad.png
+    shape: image
+}
+
+docker: "Preview"{
+	icon: https://icons.terrastruct.com/dev%2Fdocker.svg
+    shape: image
+}
+
+node -> gh -> gha -> nomad -> docker
