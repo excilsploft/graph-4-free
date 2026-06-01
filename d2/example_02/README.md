@@ -41,4 +41,4 @@ node -> gh -> gha -> nomad -> docker
 
 Into:
 
-[image](./img/example_02.svg)
+![image](./img/example_02.svg)
