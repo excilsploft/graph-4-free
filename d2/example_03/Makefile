@@ -9,7 +9,7 @@ default: build
 build: $(svg) $(png)
 
 $(src): $(lastword $(MAKEFILE_LIST))
-	test -f $@ && rm $@
+	@test -f $@ && rm $@ || touch $@
 	@printf "'%s' -> '%s': make\n" $< $@ >> $@
 	@printf "'%s' -> '%s': d2\n" $@ $(svg) >> $@
 	@printf "'%s' -> '%s': d2\n" $@ $(png) >> $@
@@ -20,8 +20,13 @@ $(svg): $(src)
 $(png): $(src)
 	@d2 -t 101 $< $@
 
+.PHONY: print
+print: $(src)
+	@d2 fmt $<
+	@cat $<
+
 .PHONY: clean
 clean:
-	-rm $(src)
-	-rm $(svg)
-	-rm $(png)
+	-@rm $(src)
+	-@rm $(svg)
+	-@rm $(png)
