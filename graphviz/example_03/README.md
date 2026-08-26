@@ -63,5 +63,5 @@ digraph BuildEnv {
 ```
 
 Into:
-![image](./img/example_03.svg)
+![image](./img/example_03.png)
 
