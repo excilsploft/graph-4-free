@@ -1,0 +1,54 @@
+graph "example_04" {
+    layout=neato;
+
+    node [
+        pin=true;
+        shape=square;
+        style=filled;
+     ]
+
+     nodesep="4";
+
+    upperleft [
+        pos="0,4";
+        label="Upper Left";
+        fillcolor="darkgreen";
+        fontcolor="white";
+
+    ]
+
+    upperright [
+        pos="4,4";
+        label="Upper Right";
+        fillcolor="firebrick";
+        fontcolor="white";
+
+    ]
+
+    lowerleft [
+        pos="0,0";
+        label="Lower Left";
+        fillcolor="darkslategrey";
+        fontcolor="white";
+    ]
+
+    lowerright [
+        pos="4,0";
+        label="Lower Right";
+        fillcolor="deepskyblue";
+        fontcolor="white";
+    ]
+
+    center [
+        pos="2,2";
+        label="Center";
+        fillcolor="black";
+        fontcolor="white";
+    ]
+
+    upperleft -- center;
+    upperright -- center;
+    lowerleft -- center;
+    lowerright -- center;
+
+}
