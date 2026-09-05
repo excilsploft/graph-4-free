@@ -1,0 +1,11 @@
+architecture-beta
+    group pubsub(cloud)[PubSub]
+    service src1(server)[Source Data] in pubsub
+    service queue(server)[Publisher] in pubsub
+    service sub1(server)[Subscriber 1] in pubsub
+    service sub2(server)[Subscriber 2] in pubsub
+    service sub3(server)[Subscriber 3] in pubsub
+    src1:B --> T:queue
+    queue:B --> T:sub1
+    queue:B --> T:sub2
+    queue:B --> T:sub3
